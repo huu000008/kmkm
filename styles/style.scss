@@ -151,7 +151,33 @@ body {
     line-height: 172%;
   }
   img {
+    position: relative;
+    z-index: 1;
     max-width: 100%;
+  }
+  .img-wrap {
+    position: relative;
+    width: 594px;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 140px;
+      left: -8px;
+      width: 0;
+      height: 75px;
+      background-color: #ffe267;
+      animation: wi356 1s ease both 0.4s;
+    }
+    @keyframes wi356 {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 235px;
+      }
+    }
   }
 }
 
@@ -807,6 +833,7 @@ body {
       font-size: 20px;
       font-weight: 400;
       line-height: 130%;
+      border-bottom: 1px solid #000;
     }
     .agree-item .error {
       position: absolute;
