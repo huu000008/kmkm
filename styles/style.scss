@@ -507,11 +507,23 @@ body {
     }
   }
   .swiper {
-    max-width: 1500px;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    &-inner {
+      position: relative;
+      max-width: 1500px;
+      margin: 0 auto;
+      .swiper-button-next,
+      .swiper-rtl .swiper-button-prev {
+        right: -30px;
+      }
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        left: -30px;
+      }
     }
   }
 }
@@ -913,5 +925,178 @@ body {
     to {
       opacity: 1;
     }
+  }
+}
+.modal-overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 30px;
+  width: 720px;
+  padding: 0;
+  animation: modalShow 0.2s;
+
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    background: #0056a6;
+    border-radius: 20px 20px 0 0;
+  }
+  .modal-header h2 {
+    color: #fff;
+    font-family: "ONE-Mobile-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .modal-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .modal-body {
+    padding: 70px 100px 90px;
+  }
+  .modal-body-title {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: "ONE-Mobile-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .modal-body ol {
+    margin: 0;
+    font-size: 1rem;
+    color: #222;
+    li {
+      font-family: "ONE-Mobile-Regular", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 130%;
+      & + li {
+        margin-top: 15px;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .modal-footer {
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .modal-footer .modal-close {
+    position: relative;
+    inset: 0;
+    background: #0056a6;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 30px;
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+    color: #fff;
+    font-family: "ONE-Mobile-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+@keyframes modalShow {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.alert-modal-content {
+  background: #fff;
+  border: 2px solid #222;
+  border-radius: 24px;
+  width: 700px;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: modalShow 0.2s;
+
+  .alert-modal-body {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 100px 50px 0;
+  }
+  .alert-modal-message {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #000;
+    font-family: "Pretendard", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .alert-modal-footer {
+    padding: 70px 24px 24px;
+    display: flex;
+    justify-content: flex-end;
+    .modal-close {
+      position: relative;
+      inset: 0;
+      border-radius: 4px;
+      background: #005bac;
+      color: #fff;
+      font-family: "ONE-Mobile-Regular", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 120%;
+    }
+  }
+  .alert-modal-btn {
+    background: #0056a6;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 28px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .alert-modal-btn:active {
+    background: #003e7a;
+  }
+  .modal-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #000;
   }
 }
