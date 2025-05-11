@@ -69,6 +69,10 @@ body {
   font-family: "Pretendard-Regular", sans-serif;
 }
 
+.swiper-wrapper {
+  height: auto;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   background: none;
@@ -229,7 +233,38 @@ body {
     margin-bottom: 40px;
   }
   .quiz-btn {
-    margin-top: 200px;
+    position: relative;
+    margin-top: 415px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 85%;
+      left: 144px;
+      width: 200px;
+      height: 228px;
+      background-image: url("/images/section_4_5.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: tossing 2s infinite linear;
+    }
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes tossing {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
   }
 }
 
@@ -507,7 +542,7 @@ body {
           font-family: "ONE-Mobile-Regular", sans-serif;
           font-size: 16px;
           font-weight: 400;
-          line-height: 100%; /* 16px */
+          line-height: 100%;
         }
       }
     }
