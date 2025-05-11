@@ -1,3 +1,112 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ONE-Mobile-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "YdestreetB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 body {
-              font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
+}
+
+.section {
+  .title {
+    font-family: "YdestreetB", sans-serif;
+  }
+}
+
+.section_1 {
+  position: relative;
+  height: 1080px;
+  padding-top: 144px;
+  background-image: url("/images/section_1_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  .text {
+    margin-bottom: 2px;
+    font-family: "ONE-Mobile-Regular", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 160%;
+  }
+  .poa {
+    position: absolute;
+    &_3 {
+      top: 72px;
+      right: 100px;
+    }
+    &_4 {
+      bottom: 164px;
+      right: 65px;
+    }
+    &_5 {
+      bottom: 228px;
+      left: 168px;
+    }
+    &_6 {
+      bottom: 95px;
+      right: 418px;
+    }
+  }
+}
+
+.section_2 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #f7f1e9;
+  text-align: center;
+  .title {
+    font-family: "YdestreetB", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 120%;
+    span {
+      color: #1976f7;
+      -webkit-text-stroke: 1px #fff;
+    }
+    &_sub {
+      margin-top: 2px;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 172%;
+    }
+  }
+  .text_2 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 172%;
+    span {
+      font-weight: 700;
+    }
+  }
 }
