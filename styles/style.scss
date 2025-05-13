@@ -171,6 +171,10 @@ body {
     &_4 {
       bottom: 165px;
       right: 40px;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -183,8 +187,10 @@ body {
   .text_1 {
     margin-top: 25px;
     margin-bottom: 35px;
-    font-size: 22px;
-    font-weight: 500;
+    color: #000;
+    font-family: "ONE-Mobile-Regular", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 172%;
   }
   img {
@@ -218,12 +224,13 @@ body {
 }
 
 .section_3 {
-  background: #f7faff;
+  padding-top: 70px;
+  background-image: url("/images/section_3_17.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
-  border-top: 80px solid #d5f0ff;
-  border-bottom: 80px solid #d5f0ff;
   .donate-title {
-    margin-top: 60px;
     margin-bottom: 48px;
     font-family: "YdestreetB", sans-serif;
     font-size: 56px;
@@ -567,7 +574,8 @@ body {
 
 .section_5 {
   padding-bottom: 58px;
-  border-bottom: 30px solid #ffde54;
+  border-bottom: 30px solid #1c7ced;
+  background-color: #e1f4ff;
   .top {
     width: 1170px;
     margin: 0 auto;
@@ -588,6 +596,7 @@ body {
       font-weight: 700;
       line-height: 160%;
       span {
+        display: flex;
         margin-top: 16px;
         color: #7c7c7c;
         font-family: "ONE-Mobile-Regular";
@@ -605,14 +614,14 @@ body {
       gap: 10px;
       border-radius: 18px;
       border: 2px solid #000;
-      background: #ffcf10;
-      color: #000;
+      background: #1c7ced;
+      color: #fff;
       font-family: "ONE-Mobile-Regular", sans-serif;
       font-size: 24px;
       font-weight: 700;
       line-height: 160%;
       &:active {
-        background: #d5ac01;
+        background: #175fb4;
       }
     }
   }
@@ -649,7 +658,7 @@ body {
   .inner {
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    width: 1400px;
     margin: 0 auto;
     text-align: left;
   }
@@ -666,6 +675,10 @@ body {
     }
     .swiper-wrapper {
       height: auto;
+    }
+    .swiper-slide {
+      border-radius: 40px;
+      overflow: hidden;
     }
     .swiper-button-container {
       display: flex;
@@ -715,6 +728,9 @@ body {
     }
     .method {
       margin-top: 24px;
+      img {
+        width: 100%;
+      }
       &-title {
         margin-left: 18px;
         font-family: "ONE-Mobile-Regular", sans-serif;

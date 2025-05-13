@@ -66,6 +66,7 @@
         <img src="/images/section_2_1.svg" alt="현재 기부된 물품" />
       </div>
       <div class="section section_3">
+        <img src="/images/section_3_18.svg" alt="" class="bg-img" />
         <div class="donate-title">물품기부 신청방법</div>
         <div class="donate-steps">
           <img
@@ -222,25 +223,37 @@
                 <img src="/images/section_5_4_1.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_2.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_3.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_4.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_5.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_6.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_7.png" alt="" />
               </div>
               <div class="swiper-slide">
-                <img src="/images/section_5_4_1.png" alt="" />
+                <img src="/images/section_5_4_8.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/section_5_4_9.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/section_5_4_10.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/section_5_4_11.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/section_5_4_12.png" alt="" />
               </div>
             </div>
           </div>
@@ -286,7 +299,10 @@
           </div>
           <div class="right">
             <div class="title">
-              <img src="/images/section_6_2.svg" alt="" />
+              <img
+                src="/images/section_6_2.svg"
+                alt="참여 방법 01 굿윌스토어 물품기부 인증사진을 찍는다. 02 #굿사이클링 #굿윌스토어 #지구를위한기부 인스타그램 or 블로그에 해시태그와 함께 업로드한다. 03 굿사이클링 페이지에서 참여 인증한다."
+              />
             </div>
             <div class="description">
               <span>
@@ -297,33 +313,11 @@
               작은 실천을 함께할 수 있습니다.
             </div>
             <div class="method">
-              <div class="method-title">참여방법</div>
-              <div class="method-list">
-                <div class="method-item">
-                  <span>1</span>
-                  굿윌스토어 물품기부 인증사진을 찍는다.
-                </div>
-                <div class="method-item">
-                  <span>2</span>
-                  인스타그램 or 블로그에 해시태그와 함께 업로드한다.
-                </div>
-                <div class="tag">
-                  <span>#굿사이클링</span>
-                  <span>#지구를위한기부</span>
-                  <span>#굿윌스토어</span>
-                </div>
-                <div class="method-item">
-                  <span>3</span>
-                  굿사이클링 페이지에서 참여 인증한다.
-                </div>
-              </div>
+              <img src="/images/section_6_6.svg" alt="" />
             </div>
             <div class="desc">
               * 총 100명 한정, 소진 시 조기 종료<br />
               제출하지 않으면 이벤트 참여로 인정되지 않습니다.
-            </div>
-            <div class="description">
-              <span>SNS 업로드 후 꼭 인증폼을 제출해주세요!</span>
             </div>
           </div>
         </div>
@@ -376,12 +370,6 @@
             </div>
             <div class="form-row agree-row">
               <div class="agree-checkboxes">
-                <div class="agree-item all-agree">
-                  <div class="agree-item-container">
-                    <input type="checkbox" id="allAgree" />
-                    <label for="allAgree">전체 동의</label>
-                  </div>
-                </div>
                 <div class="agree-item">
                   <div class="agree-item-container">
                     <input type="checkbox" id="agree1" required />
@@ -391,16 +379,6 @@
                   </div>
                   <button type="button" class="terms-link">약관보기</button>
                   <div class="error">개인정보 수집 및 이용에 동의해 주세요</div>
-                </div>
-                <div class="agree-item">
-                  <div class="agree-item-container">
-                    <input type="checkbox" id="agree2" required />
-                    <label for="agree2"
-                      >[필수] 개인정보 제3자 제공에 동의합니다.</label
-                    >
-                  </div>
-                  <button type="button" class="terms-link">약관보기</button>
-                  <div class="error">개인정보 제3자 제공에 동의해 주세요</div>
                 </div>
               </div>
             </div>
@@ -863,6 +841,8 @@
           slidesPerGroup: 2,
         });
         new Swiper(".section_6 .swiper", {
+          effect: "cards",
+          grabCursor: true,
           slidesPerView: 1,
           spaceBetween: 30,
           navigation: {
