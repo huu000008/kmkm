@@ -167,7 +167,7 @@ body {
   position: relative;
   height: 1080px;
   padding-top: 90px;
-  background-image: url("/images/section_1_1.png");
+  background-image: url("../images/section_1_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +251,7 @@ body {
 
 .section_3 {
   padding-top: 70px;
-  background-image: url("/images/section_3_17.png");
+  background-image: url("../images/section_3_17.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -344,7 +344,7 @@ body {
 .section_4 {
   height: 1080px;
   padding-top: 50px;
-  background-image: url("/images/section_4_1.svg");
+  background-image: url("../images/section_4_1.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ body {
 .section_4 .quiz-step-1 {
   position: relative;
   background: #fff2af;
-  background-image: url("/images/section_4_2.svg");
+  background-image: url("../images/section_4_2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -672,7 +672,7 @@ body {
   left: 40%;
   width: 200px;
   height: 228px;
-  background-image: url("/images/section_4_5.svg");
+  background-image: url("../images/section_4_5.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -777,7 +777,7 @@ body {
   width: 1170px;
   margin: 0 auto;
   padding: 60px 0 70px;
-  background-image: url("/images/section_5_3.svg");
+  background-image: url("../images/section_5_3.svg");
   background-repeat: no-repeat;
   background-position: right 0 top 0;
 }
@@ -862,7 +862,7 @@ body {
 .section_6 {
   height: 1080px;
   padding-top: 85px;
-  background-image: url("/images/section_6_3.svg");
+  background-image: url("../images/section_6_3.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1068,7 +1068,7 @@ body {
 .section_7 {
   padding-top: 295px;
   padding-bottom: 80px;
-  background-image: url("/images/section_7_1.svg");
+  background-image: url("../images/section_7_1.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1439,7 +1439,7 @@ body {
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
-  background-image: url("/images/section_9_4.svg");
+  background-image: url("../images/section_9_4.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1527,7 +1527,7 @@ body {
 
 .section_10 {
   padding: 80px 0 90px;
-  background-image: url("/images/section_10_1.png");
+  background-image: url("../images/section_10_1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1590,7 +1590,7 @@ body {
   padding-top: 25px;
   padding-left: 205px;
   background-color: #eefcff;
-  background-image: url("/images/section_10_9.png");
+  background-image: url("../images/section_10_9.png");
   background-size: 160px;
   background-position: left 25px top 18px;
   background-repeat: no-repeat;
@@ -1608,7 +1608,7 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url("/images/section_10_3.png");
+  background-image: url("../images/section_10_3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
