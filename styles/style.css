@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "JalnanGothic";
-  src: url("/fonts/JalnanGothicTTF.ttf") format("truetype");
+  src: url("../fonts/JalnanGothicTTF.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -44,7 +44,7 @@
 
 @font-face {
   font-family: "GmarketSans";
-  src: url("/fonts/GmarketSansTTFBold.ttf") format("truetype");
+  src: url("../fonts/GmarketSansTTFBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -52,7 +52,7 @@
 
 @font-face {
   font-family: "GmarketSans";
-  src: url("/fonts/GmarketSansTTFMedium.ttf") format("truetype");
+  src: url("../fonts/GmarketSansTTFMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -60,7 +60,7 @@
 
 @font-face {
   font-family: "GmarketSans";
-  src: url("/fonts/GmarketSansTTFLight.ttf") format("truetype");
+  src: url("../fonts/GmarketSansTTFLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -522,8 +522,8 @@ body {
 }
 
 .section_4 {
-  height: 1080px;
   padding-top: 50px;
+  padding-bottom: 112px;
   background-image: url("../images/section_4_1.svg");
   background-size: cover;
   background-position: center;
@@ -730,6 +730,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: 46px;
   padding: 12px 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1055,9 +1056,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   width: 1400px;
   margin: 0 auto;
   text-align: left;
+}
+
+.section_6 .inner .poa_2 {
+  position: absolute;
+  bottom: -168px;
+  left: -34px;
+  z-index: 1;
 }
 
 .section_6 .swiper {
@@ -1084,40 +1093,18 @@ body {
   overflow: hidden;
 }
 
-.section_6 .swiper .swiper-button-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 12px;
-}
-
-.section_6 .swiper .swiper-button-container .swiper-pagination-fraction {
-  position: relative;
-  inset: 0;
-  width: 110px;
-  font-family: "ONE-Mobile-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.section_6 .swiper .swiper-button-container .swiper-pagination-current {
-  color: #3a35f5;
-}
-
 .section_6 .swiper .swiper-button-container .swiper-button-next,
 .section_6 .swiper .swiper-button-container .swiper-button-prev {
-  position: relative;
-  inset: 0;
-  width: 48px;
-  height: 48px;
-  margin: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.section_6 .swiper .swiper-button-container .swiper-button-next {
+  right: -20px;
+}
+
+.section_6 .swiper .swiper-button-container .swiper-button-prev {
+  left: -20px;
 }
 
 .section_6 .right .description {
