@@ -28,10 +28,42 @@
 }
 
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-family: "JalnanGothic";
+  src: url("/fonts/JalnanGothicTTF.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PartialSansKR-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("/fonts/GmarketSansTTFBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("/fonts/GmarketSansTTFMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  src: url("/fonts/GmarketSansTTFLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -164,8 +196,18 @@ body {
 }
 
 .section_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  height: 1080px;
+  height: 1173px;
   padding-top: 90px;
   background-image: url("../images/section_1_1.png");
   background-size: cover;
@@ -175,11 +217,22 @@ body {
 }
 
 .section_1 .text {
-  margin-top: -30px;
+  margin-top: 22px;
   font-family: "ONE-Mobile-Regular", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 160%;
+}
+
+.section_1 .text_sub {
+  padding: 12px 56px;
+  font-family: "GmarketSans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #fff;
 }
 
 .section_1 .poa {
@@ -189,6 +242,30 @@ body {
 .section_1 .poa_3 {
   top: 160px;
   right: 100px;
+}
+
+.section_1 .poa_3 .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  position: absolute;
+  left: 50%;
+  top: 73%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "PartialSansKR-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.section_1 .poa_3 .score span {
+  color: #00a856;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  letter-spacing: 2.4px;
 }
 
 .section_1 .poa_4 {
@@ -218,6 +295,110 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 172%;
+}
+
+.section_2 .text-2 {
+  text-align: center;
+  font-family: "GmarketSans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 172%;
+}
+
+.section_2 .text-2 span {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 172%;
+}
+
+.section_2 .gauge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  margin-top: 35px;
+  font-family: "YdestreetB", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.section_2 .gauge .gauge-inner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 760px;
+  height: 45px;
+  border-radius: 999px;
+  border: 1px solid #000;
+  background: #fafafa;
+}
+
+.section_2 .gauge .gauge-bar {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  border: 1px solid #000;
+}
+
+.section_2 .bg-img {
+  width: 1680px;
+  height: 920px;
+  margin: 0 auto;
+  padding-top: 580px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section_2 .bg-img-1 {
+  background-image: url("../images/section_2_1.svg");
+}
+
+.section_2 .bg-img-1 .gauge-bar {
+  background: #6e5a3d;
+}
+
+.section_2 .bg-img-2 {
+  background-image: url("../images/section_2_2.svg");
+}
+
+.section_2 .bg-img-2 .gauge-bar {
+  background: #80a97d;
+}
+
+.section_2 .bg-img-3 {
+  background-image: url("../images/section_2_3.svg");
+}
+
+.section_2 .bg-img-3 .gauge-bar {
+  background: #81c2e8;
+}
+
+.section_2 .bg-img-4 {
+  background-image: url("../images/section_2_4.svg");
+}
+
+.section_2 .bg-img-4 .gauge-bar {
+  background: #00a856;
+}
+
+.section_2 .bg-img .box {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 36px 0 60px;
+  border-radius: 18px;
+  border: 2px solid #000;
+  opacity: 0.8;
+  background: #fcfcfc;
 }
 
 .section_2 img {
@@ -332,7 +513,7 @@ body {
   border: 2px solid #000;
   background: #93cff2;
   color: #000;
-  font-family: "ONE-Mobile-Regular", sans-serif;
+  font-family: "GmarketSans", sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
@@ -769,7 +950,6 @@ body {
 
 .section_5 {
   padding-bottom: 58px;
-  border-bottom: 30px solid #1c7ced;
   background-color: #e1f4ff;
 }
 
@@ -963,7 +1143,7 @@ body {
 }
 
 .section_6 .right .method {
-  margin-top: 24px;
+  margin-top: 50px;
 }
 
 .section_6 .right .method img {
@@ -1123,7 +1303,7 @@ body {
 .section_7 .certify-form .form-row label {
   width: 130px;
   text-align: center;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1150,7 +1330,7 @@ body {
   height: 62px;
   padding: 0 44px;
   font-size: 22px;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   line-height: 130%;
   border-radius: 999px;
   border: 2px solid #000;
@@ -1164,7 +1344,7 @@ body {
 
 .section_7 .certify-form .form-row input::-webkit-input-placeholder {
   color: #b5b5b5;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1172,7 +1352,7 @@ body {
 
 .section_7 .certify-form .form-row input:-ms-input-placeholder {
   color: #b5b5b5;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1180,7 +1360,7 @@ body {
 
 .section_7 .certify-form .form-row input::-ms-input-placeholder {
   color: #b5b5b5;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1188,7 +1368,7 @@ body {
 
 .section_7 .certify-form .form-row input::placeholder {
   color: #b5b5b5;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1211,6 +1391,7 @@ body {
 }
 
 .section_7 .certify-form .agree-row {
+  border-top: 1px solid #000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1220,6 +1401,9 @@ body {
           align-items: flex-start;
   gap: 12px;
   margin-top: 12px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 60px;
 }
 
 .section_7 .certify-form .agree-checkboxes {
@@ -1271,7 +1455,6 @@ body {
 
 .section_7 .certify-form .agree-item label {
   width: auto;
-  font-family: Pretendard;
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1279,7 +1462,6 @@ body {
 
 .section_7 .certify-form .agree-item .terms-link {
   color: #000;
-  font-family: Pretendard;
   font-size: 20px;
   font-weight: 400;
   line-height: 130%;
@@ -1372,7 +1554,7 @@ body {
   border-radius: 0 0 24px 24px;
   padding: 32px 24px;
   font-size: 17px;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   color: #222;
   min-height: 120px;
   -webkit-box-sizing: border-box;
@@ -1404,7 +1586,8 @@ body {
   border: none;
   outline: none;
   text-align: left;
-  font-family: "ONE-Mobile-Regular", sans-serif;
+  color: #000;
+  font-family: "GmarketSans";
   font-size: 24px;
   font-weight: 700;
   line-height: 130%;
@@ -1452,7 +1635,6 @@ body {
 
 .section_9 .faq-accordion-content {
   padding: 35px 32px;
-  font-family: Pretendard;
   font-size: 21px;
   font-weight: 500;
   border-top: 2px solid #53b18c;
@@ -1540,6 +1722,7 @@ body {
 
 .section_10 .title {
   text-align: center;
+  font-family: "JalnanGothic";
   font-size: 56px;
   font-weight: 400;
   line-height: 120%;
@@ -1573,45 +1756,69 @@ body {
 }
 
 .section_10 .content .left .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 700px;
   padding: 40px;
+  padding-top: 250px;
   border-radius: 50px;
-  background: #fcfcfc;
+  background-image: url("../images/section_10_16.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   -webkit-box-shadow: 4px 4px 29.9px 0px rgba(0, 0, 0, 0.07);
           box-shadow: 4px 4px 29.9px 0px rgba(0, 0, 0, 0.07);
 }
 
 .section_10 .content .left .name {
-  position: relative;
-  height: 180px;
-  margin-top: 25px;
-  margin-left: -40px;
-  margin-right: -40px;
-  padding-top: 25px;
-  padding-left: 205px;
-  background-color: #eefcff;
-  background-image: url("../images/section_10_9.png");
-  background-size: 160px;
-  background-position: left 25px top 18px;
-  background-repeat: no-repeat;
-  font-family: "YdestreetB", sans-serif;
-  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  color: #1c75bc;
+  font-family: Pretendard;
+  font-size: 22px;
   font-weight: 700;
   line-height: 120%;
 }
 
-.section_10 .content .left .name::after {
-  position: absolute;
-  right: 20px;
-  bottom: -20px;
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-image: url("../images/section_10_3.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.section_10 .content .left .name span {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.section_10 .content .left .desc {
+  margin-top: 8px;
+  padding-top: 15px;
+  border-top: 1px solid #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.section_10 .content .left .date {
+  margin-top: 20px;
+  color: #a2a2a2;
+  font-family: Pretendard;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 .section_10 .content .left .list {
@@ -1622,15 +1829,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
-  margin-top: 40px;
+  gap: 15px;
+  margin-top: 24px;
 }
 
 .section_10 .content .left .list .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .section_10 .content .left .list .item .icon {
@@ -1643,16 +1850,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
-  border: 2px solid #1363df;
+  width: 55px;
+  height: 55px;
+  border-radius: 13.667px;
+  border: 1.367px solid #1363df;
   background: #fcfcfc;
 }
 
 .section_10 .content .left .list .item .text-1 {
-  font-family: "YdestreetB", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 130%;
 }
@@ -1664,17 +1870,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 12px;
+  margin-top: 4px;
   color: #1363df;
   font-family: "YdestreetB", sans-serif;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 130%;
 }
 
 .section_10 .content .left .list .item .text-2 span {
+  margin-top: 3px;
   font-family: "YdestreetB", sans-serif;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 120%;
 }
@@ -1697,7 +1904,7 @@ body {
   border-radius: 18px;
   color: #fff;
   background: #005bac;
-  font-family: "GmarketSansMedium";
+  font-family: "GmarketSans";
   font-size: 22px;
   font-weight: 700;
   line-height: 150%;
@@ -1899,7 +2106,6 @@ body {
           flex-direction: column;
   gap: 8px;
   color: #000;
-  font-family: "Pretendard", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 120%;
