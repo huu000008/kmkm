@@ -207,7 +207,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 1173px;
+  height: 100vh;
   padding-top: 90px;
   background-image: url("../images/section_1_1.png");
   background-size: cover;
@@ -269,10 +269,12 @@ body {
 }
 
 .section_1 .poa_4 {
+  position: fixed;
   bottom: 165px;
   right: 40px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  z-index: 10;
 }
 
 .section_1 .poa_4:hover {
@@ -650,6 +652,7 @@ body {
   line-height: 160%;
 }
 
+.section_4 .quiz-step-3 a,
 .section_4 .quiz-step-3 button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -676,6 +679,7 @@ body {
   transition: all 0.2s;
 }
 
+.section_4 .quiz-step-3 a:active,
 .section_4 .quiz-step-3 button:active {
   background: #004e94;
   -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.45) inset;

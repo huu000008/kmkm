@@ -26,9 +26,37 @@
         </div>
         <div class="poa poa_3">
           <img src="images/section_1_3.svg" alt="" />
-          <div class="score"><span>100,000</span> 점</div>
+          <div class="score"><span id="score-count">0</span> 점</div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const target = 100000;
+              const duration = 2000; // 2초 동안 카운팅
+              const frameRate = 60;
+              const totalFrames = Math.round((duration / 1000) * frameRate);
+              const scoreEl = document.getElementById("score-count");
+              let frame = 0;
+
+              function animateCount() {
+                frame++;
+                const progress = frame / totalFrames;
+                const current = Math.floor(target * progress);
+                scoreEl.textContent = current.toLocaleString();
+                if (frame < totalFrames) {
+                  requestAnimationFrame(animateCount);
+                } else {
+                  scoreEl.textContent = target.toLocaleString();
+                }
+              }
+
+              animateCount();
+            });
+          </script>
         </div>
-        <a href="#" class="poa poa_4">
+        <a
+          href="https://goodwillstore.kr/view/member/sub/privacy.php?_gl=1*1tsjjy0*_gcl_au*MTA3MTYwMzIxOC4xNzQ3MDA3MzY0LjM4Mzc0OTE4MC4xNzQ3NzAyNzM5LjE3NDc3MDI3Mzk.*_ga*MjAzNTIwMzY1LjE3NDU0OTM2ODM.*_ga_KK5SJKBW8J*czE3NDc3MDI3MDYkbzE5JGcxJHQxNzQ3NzA0MTY4JGowJGwwJGgw"
+          target="_blank"
+          class="poa poa_4"
+        >
           <img src="images/section_1_4.svg" alt="물품 기부하고 한정 키링받기" />
         </a>
       </div>
@@ -94,7 +122,12 @@
             가능한 오염되거나 손상되지 않은 깨끗한 상태여야 합니다
           </div>
         </div>
-        <button class="custom-btn custom-btn-2">물품 기부하기</button>
+        <a
+          href="https://goodwillstore.kr/view/member/sub/privacy.php?_gl=1*1tsjjy0*_gcl_au*MTA3MTYwMzIxOC4xNzQ3MDA3MzY0LjM4Mzc0OTE4MC4xNzQ3NzAyNzM5LjE3NDc3MDI3Mzk.*_ga*MjAzNTIwMzY1LjE3NDU0OTM2ODM.*_ga_KK5SJKBW8J*czE3NDc3MDI3MDYkbzE5JGcxJHQxNzQ3NzA0MTY4JGowJGwwJGgw"
+          target="_blank"
+          class="custom-btn custom-btn-2"
+          >물품 기부하기</a
+        >
         <div class="donate-title donate-title-2">
           어떤 물품을 기부해야 할까요?
         </div>
@@ -127,6 +160,24 @@
               </div>
               <div class="swiper-slide">
                 <img src="images/section_3_14.svg" alt="가구" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_6.svg" alt="의류" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_7.svg" alt="잡화" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_8.svg" alt="주방/생활" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_9.svg" alt="도서/음반" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_10.svg" alt="문화 용품" />
+              </div>
+              <div class="swiper-slide">
+                <img src="images/section_3_11.svg" alt="가전 제품" />
               </div>
             </div>
             <div class="swiper-button-next">
@@ -198,7 +249,11 @@
             중고 의류나 리폼 의류를 고려하는 것만으로도 자원 절약과 CO₂ 배출
             감소에 큰 도움이 돼요.
           </div>
-          <button>기부로 동참하기</button>
+          <a
+            href="https://goodwillstore.kr/view/member/sub/privacy.php?_gl=1*1tsjjy0*_gcl_au*MTA3MTYwMzIxOC4xNzQ3MDA3MzY0LjM4Mzc0OTE4MC4xNzQ3NzAyNzM5LjE3NDc3MDI3Mzk.*_ga*MjAzNTIwMzY1LjE3NDU0OTM2ODM.*_ga_KK5SJKBW8J*czE3NDc3MDI3MDYkbzE5JGcxJHQxNzQ3NzA0MTY4JGowJGwwJGgw"
+            target="_blank"
+            >기부로 동참하기</a
+          >
         </div>
       </div>
       <div class="section section_5">
@@ -217,7 +272,12 @@
               <br />
               <span>* 굿윌스토어 신규 기부자 대상 / 재고 소진 시 종료</span>
             </div>
-            <a href="#" class="custom-btn custom-btn-2">첫 기부하고 키링받기</a>
+            <a
+              href="https://goodwillstore.kr/view/member/sub/privacy.php?_gl=1*1tsjjy0*_gcl_au*MTA3MTYwMzIxOC4xNzQ3MDA3MzY0LjM4Mzc0OTE4MC4xNzQ3NzAyNzM5LjE3NDc3MDI3Mzk.*_ga*MjAzNTIwMzY1LjE3NDU0OTM2ODM.*_ga_KK5SJKBW8J*czE3NDc3MDI3MDYkbzE5JGcxJHQxNzQ3NzA0MTY4JGowJGwwJGgw"
+              target="_blank"
+              class="custom-btn custom-btn-2"
+              >첫 기부하고 키링받기</a
+            >
           </div>
           <div class="right">
             <img src="images/section_5_3.svg" alt="" class="poa" />
@@ -328,11 +388,11 @@
             />
           </div>
         </div>
-        <a href="#" class="custom-btn custom-btn-2">
+        <a href="#section_7" class="custom-btn custom-btn-2">
           참여 인증하고 락앤락 도시락 받기
         </a>
       </div>
-      <div class="section section_7">
+      <div class="section section_7" id="section_7">
         <div class="inner">
           <div class="title">참여 인증하기</div>
           <form class="certify-form">
@@ -951,6 +1011,8 @@
             prevEl: ".section_3 .swiper-button-prev",
           },
           loop: true,
+          // rewind: true,
+          slidesPerGroup: 3,
         });
         new Swiper(".section_5 .swiper", {
           slidesPerView: 4,
