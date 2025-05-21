@@ -1120,8 +1120,8 @@ body {
     padding-bottom: 26px;
     padding-left: 24px;
     padding-right: 24px;
-    border-radius: 50px;
-    border: 2px solid #000;
+    border-radius: 20px;
+    border: 1px solid #000;
     background: #fff;
     .title {
       color: #000;
@@ -1137,7 +1137,7 @@ body {
     margin: 40px auto 0;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 32px;
 
     .form-row {
       display: flex;
@@ -1159,14 +1159,15 @@ body {
           position: relative;
           &::after {
             position: absolute;
-            top: -5px;
-            right: -14px;
+            top: -2px;
+            right: -7px;
             content: "*";
             color: #fc1100;
-            font-family: "ONE-Mobile-Regular", sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 100%;
+            font-family: "GmarketSans";
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 100%; /* 11px */
           }
         }
       }
@@ -1185,7 +1186,7 @@ body {
         border: 1px solid #000;
         background: #fff;
         &:focus {
-          border: 2px solid #0f927a;
+          border: 1px solid #0f927a;
           outline: none;
         }
         &::placeholder {
@@ -1198,12 +1199,13 @@ body {
         .error {
           position: absolute;
           top: calc(100% + 8px);
-          left: 44px;
+          left: 15px;
           color: #fc1100;
-          font-family: "ONE-Mobile-Regular", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 100%;
+          font-family: "GmarketSans";
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%; /* 11px */
         }
       }
     }
@@ -1212,10 +1214,6 @@ body {
       flex-direction: column;
       align-items: flex-start;
       gap: 12px;
-      margin-top: 12px;
-      padding-top: 35px;
-      padding-left: 40px;
-      padding-right: 60px;
     }
     .agree-checkboxes {
       display: flex;
@@ -1225,66 +1223,74 @@ body {
     }
     .agree-item {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
+      flex-direction: column;
+      gap: 4px;
       position: relative;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
       & + .agree-item {
         margin-bottom: 30px;
       }
     }
     .agree-item-container {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      gap: 6px;
     }
     .agree-item input[type="checkbox"] {
-      width: 26px;
-      height: 26px;
+      width: 20px;
+      height: 20px;
       margin: 0;
       accent-color: #3a35f5;
       margin-right: 6px;
     }
     .agree-item label {
       width: auto;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 130%;
+      margin-left: 0;
+      color: #000;
+      font-family: "GmarketSans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 15.6px */
     }
     .agree-item .terms-link {
+      display: inline-flex;
       color: #000;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 130%;
-      border-bottom: 1px solid #000;
+      font-family: "GmarketSans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 15.6px */
+      text-decoration: underline;
     }
     .agree-item .error {
-      position: absolute;
-      top: calc(100% + 8px);
-      margin-left: 32px;
       color: #fc1100;
-      font-family: "ONE-Mobile-Regular", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 100%;
-      margin-top: 2px;
+      font-family: "GmarketSans";
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%; /* 11px */
       display: block;
     }
     .custom-btn {
       display: inline-flex;
-      width: 230px;
       margin: 0 auto;
-      padding: 17px 66px;
+      display: inline-flex;
+      padding: 10px 40px;
       justify-content: center;
       align-items: center;
       gap: 10px;
-      border-radius: 18px;
-      border: 2px solid #000;
+      border-radius: 10px;
+      border: 1px solid #000;
       background: #00a856;
       color: #fff;
-      font-family: "ONE-Mobile-Regular", sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 160%;
+      font-family: "GmarketSans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 19.2px */
       &:active {
         background: #018c48;
       }
@@ -1297,11 +1303,12 @@ body {
   }
 }
 .section_9 {
-  padding: 60px 0;
+  padding: 50px 0;
   background: #f0f8e8;
   .title {
+    color: #000;
     font-family: "YdestreetB", sans-serif;
-    font-size: 56px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 130%;
     text-align: center;
@@ -1310,18 +1317,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .faq-tab-list {
     display: flex;
-    gap: 80px;
-    margin-bottom: 32px;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    padding: 0 16px;
   }
   .faq-tab-panel {
     width: 100%;
-    max-width: 1140px;
-    border-radius: 0 0 24px 24px;
-    padding: 32px 24px;
+    padding: 32px 24px 0;
     font-size: 17px;
     font-family: "GmarketSans";
     color: #222;
@@ -1334,37 +1341,41 @@ body {
     gap: 16px;
   }
   .faq-accordion-item {
-    border-radius: 38px;
-    border: 2px solid #53b18c;
+    border-radius: 18px;
+    border: 1px solid #53b18c;
     background: #fcfcfc;
     overflow: hidden;
   }
   .faq-accordion-trigger {
     width: 100%;
-    padding: 40px 32px;
+    padding: 15px;
     background: none;
     border: none;
     outline: none;
     text-align: left;
     color: #000;
     font-family: "GmarketSans";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 130%;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 16.9px */
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     transition: color 0.2s;
+    img {
+      width: 24px;
+    }
     & > span {
       display: flex;
       align-items: center;
-      gap: 35px;
+      gap: 10px;
     }
   }
   .faq-accordion-icon {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     transition: transform 0.2s;
     background-image: url("../images/section_9_4.svg");
     background-size: contain;
@@ -1375,16 +1386,22 @@ body {
     transform: rotate(180deg);
   }
   .faq-accordion-content {
-    padding: 35px 32px;
-    font-size: 21px;
+    padding: 15px 15px 40px 15px;
+    color: #000;
+    font-family: "GmarketSans";
+    font-size: 12px;
+    font-style: normal;
     font-weight: 500;
-    border-top: 2px solid #53b18c;
-    line-height: 160%;
+    line-height: 160%; /* 19.2px */
+    border-top: 1px solid #53b18c;
     animation: accordion-fadein 0.2s;
     &-inner {
       display: flex;
-      align-items: center;
-      gap: 35px;
+      align-items: flex-start;
+      gap: 10px;
+      img {
+        width: 24px;
+      }
     }
   }
   @keyframes accordion-fadein {
@@ -1397,27 +1414,32 @@ body {
   }
   .custom-btn {
     display: inline-flex;
-    padding: 16px 138px;
+    padding: 10px 0;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    border: 2px solid #000;
+    border-radius: 8px;
+    flex: 1;
+    border: 1px solid #000;
     background: #fff;
     color: #000;
-    font-family: "ONE-Mobile-Regular", sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 130%;
+    font-family: "GmarketSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 15.6px */
     &.active {
       background: #4eaf85;
       color: #fff;
       box-shadow: inset 4px 0 4px -2px rgba(0, 0, 0, 0.5),
         inset 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-      transform: translate(5px, 5px);
+      transform: translate(2px, 2px);
       &::before {
         transform: translate3d(0, 0, -1px);
       }
+    }
+    span {
+      display: block;
+      margin-top: 3px;
     }
   }
 }
@@ -1433,8 +1455,9 @@ body {
 }
 .modal-content {
   background: #fff;
-  border-radius: 30px;
-  width: 720px;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 320px;
   padding: 0;
   animation: modalShow 0.2s;
 
@@ -1443,57 +1466,60 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100px;
+    height: 46px;
     background: #0056a6;
-    border-radius: 20px 20px 0 0;
   }
   .modal-header h2 {
     color: #fff;
-    font-family: "ONE-Mobile-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 150%;
+    text-align: center;
+    font-family: "GmarketSans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%; /* 21px */
   }
   .modal-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 4px;
+    right: 20px;
     background: none;
     border: none;
-    font-size: 40px;
+    font-size: 26px;
     cursor: pointer;
     color: #fff;
   }
   .modal-body {
-    padding: 70px 100px 90px;
+    padding: 25px 25px 30px;
   }
   .modal-body-title {
     font-weight: bold;
-    margin-bottom: 25px;
-    font-family: "ONE-Mobile-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 130%;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: "GmarketSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 15.6px */
   }
   .modal-body ol {
     margin: 0;
-    font-size: 1rem;
-    color: #222;
     li {
-      font-family: "ONE-Mobile-Regular", sans-serif;
-      font-size: 24px;
-      font-weight: 400;
+      color: #000;
+      font-family: "GmarketSans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
       line-height: 130%;
       & + li {
-        margin-top: 15px;
+        margin-top: 5px;
       }
       span {
-        font-weight: 700;
+        font-weight: 800;
       }
     }
   }
   .modal-footer {
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     text-align: center;
   }
   .modal-footer .modal-close {
@@ -1501,16 +1527,17 @@ body {
     inset: 0;
     background: #0056a6;
     color: #fff;
-    border-radius: 8px;
-    padding: 10px 30px;
+    border-radius: 4px;
+    padding: 5px 16px;
     border: none;
     margin: 0 auto;
     display: inline-block;
     color: #fff;
-    font-family: "ONE-Mobile-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 120%;
+    font-family: "GmarketSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 14.4px */
   }
 }
 @keyframes modalShow {
@@ -1526,9 +1553,9 @@ body {
 
 .alert-modal-content {
   background: #fff;
-  border: 2px solid #222;
-  border-radius: 24px;
-  width: 700px;
+  border: 1px solid #222;
+  border-radius: 14px;
+  width: 320px;
   padding: 0;
   position: relative;
   display: flex;
@@ -1537,22 +1564,30 @@ body {
 
   .alert-modal-body {
     display: flex;
-    align-items: center;
-    gap: 32px;
-    padding: 100px 50px 0;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 45px 22px 0;
+  }
+  .alert-modal-icon {
+    width: 20px;
+    img {
+      width: 100%;
+    }
   }
   .alert-modal-message {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     color: #000;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 120%;
+    font-family: "GmarketSans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
   }
   .alert-modal-footer {
-    padding: 70px 24px 24px;
+    padding: 25px 24px 16px;
     display: flex;
     justify-content: flex-end;
     .modal-close {
@@ -1561,10 +1596,11 @@ body {
       border-radius: 4px;
       background: #005bac;
       color: #fff;
-      font-family: "ONE-Mobile-Regular", sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 120%;
+      font-family: "GmarketSans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 120%; /* 14.4px */
     }
   }
   .alert-modal-btn {
@@ -1584,11 +1620,11 @@ body {
   }
   .modal-close {
     position: absolute;
-    top: 30px;
-    right: 30px;
+    top: 9px;
+    right: 14px;
     background: none;
     border: none;
-    font-size: 40px;
+    font-size: 25px;
     cursor: pointer;
     color: #000;
   }
