@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 
 @font-face {
   font-family: "ONE-Mobile-Regular";
@@ -101,7 +95,10 @@ img {
 }
 
 body {
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 .custom-btn {
@@ -183,7 +180,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 100vh;
+  height: 1080px;
   padding-top: 90px;
   background-image: url("../images/section_1_1.png");
   background-size: cover;
@@ -205,13 +202,17 @@ body {
       border-radius: 50px;
       border: 1px solid #000;
       background: #fff;
+      span {
+        display: block;
+        margin-top: 3px;
+      }
     }
   }
   .poa {
     position: absolute;
     &_3 {
       top: 160px;
-      right: 100px;
+      right: 50px;
       .score {
         display: flex;
         gap: 9px;
@@ -220,12 +221,13 @@ body {
         top: 73%;
         transform: translate(-50%, -50%);
         font-family: "PartialSansKR-Regular", sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 110%;
         span {
+          width: 136px;
           color: #00a856;
-          font-size: 24px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 110%;
           letter-spacing: 2.4px;
@@ -729,6 +731,9 @@ body {
     width: 1170px;
     margin: 0 auto;
     padding: 60px 0 70px;
+    background-image: url("../images/section_5_5.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
     .right {
       animation: shake-vertical 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
         infinite both;
@@ -854,6 +859,7 @@ body {
   .right {
     .description {
       margin-top: 20px;
+      margin-left: 30px;
       font-family: "ONE-Mobile-Regular", sans-serif;
       font-size: 24px;
       font-weight: 400;
