@@ -1888,7 +1888,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: 22px;
 }
 
 .section_10 .content .left .list .item .icon {
