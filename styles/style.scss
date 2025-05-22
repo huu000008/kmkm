@@ -240,8 +240,32 @@ body {
       right: 40px;
       transition: all 0.2s;
       z-index: 10;
+      img {
+        position: relative;
+        z-index: 2;
+      }
       &:hover {
         transform: scale(1.1);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 46%;
+        left: 48%;
+        width: 285px;
+        height: 285px;
+        background-image: url(../images/section_1_4_2.svg);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        animation: fixedCircleRotate 13s infinite linear;
+      }
+      @keyframes fixedCircleRotate {
+        0% {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
       }
     }
   }

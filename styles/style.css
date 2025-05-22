@@ -277,9 +277,50 @@ body {
   z-index: 10;
 }
 
+.section_1 .poa_4 img {
+  position: relative;
+  z-index: 2;
+}
+
 .section_1 .poa_4:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.section_1 .poa_4::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: 48%;
+  width: 285px;
+  height: 285px;
+  background-image: url(../images/section_1_4_2.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  -webkit-animation: fixedCircleRotate 13s infinite linear;
+          animation: fixedCircleRotate 13s infinite linear;
+}
+
+@-webkit-keyframes fixedCircleRotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes fixedCircleRotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .section_2 {

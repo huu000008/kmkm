@@ -189,7 +189,7 @@ body {
   position: relative;
   height: 420px;
   padding-top: 40px;
-  background-image: url("../images/section_1_1_m.png");
+  background-image: url("../images/section_1_1_m.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,6 +199,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
+    gap: 10px;
     bottom: 12px;
     left: 16px;
     right: 16px;
@@ -238,7 +239,7 @@ body {
       font-weight: 500;
       line-height: 110%; /* 8.8px */
       border-radius: 50px;
-      border: 1px solid #000;
+      border: 0.5px solid #000;
       background: #fff;
       span {
         display: block;
@@ -609,6 +610,9 @@ body {
     &-3 {
       padding-top: 62px;
       background-color: #fff;
+      &.yellow {
+        background-color: #fee26e;
+      }
       .title {
         display: flex;
         flex-direction: column;
@@ -620,7 +624,7 @@ body {
         font-size: 22px;
         font-style: normal;
         font-weight: 700;
-        line-height: 160%; /* 38.4px */
+        line-height: 130%;
         img {
           width: 30px;
         }
@@ -857,11 +861,9 @@ body {
       text-align: center;
       .poa {
         width: 140px;
+        margin-left: 30px;
         animation: shake-vertical 8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
           infinite both;
-        img {
-          width: 100%;
-        }
       }
     }
     .left {
@@ -1397,10 +1399,15 @@ body {
     animation: accordion-fadein 0.2s;
     &-inner {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 10px;
       img {
         width: 24px;
+      }
+      b {
+        img {
+          width: 14px;
+        }
       }
     }
   }

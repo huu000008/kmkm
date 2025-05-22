@@ -210,7 +210,7 @@ body {
   position: relative;
   height: 420px;
   padding-top: 40px;
-  background-image: url("../images/section_1_1_m.png");
+  background-image: url("../images/section_1_1_m.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -228,6 +228,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  gap: 10px;
   bottom: 12px;
   left: 16px;
   right: 16px;
@@ -276,7 +277,7 @@ body {
   line-height: 110%;
   /* 8.8px */
   border-radius: 50px;
-  border: 1px solid #000;
+  border: 0.5px solid #000;
   background: #fff;
 }
 
@@ -765,6 +766,10 @@ body {
   background-color: #fff;
 }
 
+.section_4 .quiz-step-3.yellow {
+  background-color: #fee26e;
+}
+
 .section_4 .quiz-step-3 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -783,8 +788,7 @@ body {
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%;
-  /* 38.4px */
+  line-height: 130%;
 }
 
 .section_4 .quiz-step-3 .title img {
@@ -1130,12 +1134,9 @@ body {
 
 .section_5 .top .right .poa {
   width: 140px;
+  margin-left: 30px;
   -webkit-animation: shake-vertical 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
           animation: shake-vertical 8s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
-}
-
-.section_5 .top .right .poa img {
-  width: 100%;
 }
 
 .section_5 .top .left {
@@ -1873,14 +1874,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
 .section_9 .faq-accordion-content-inner img {
   width: 24px;
+}
+
+.section_9 .faq-accordion-content-inner b img {
+  width: 14px;
 }
 
 @-webkit-keyframes accordion-fadein {
