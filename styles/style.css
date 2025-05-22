@@ -201,7 +201,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 1080px;
+  height: 1173px;
   padding-top: 90px;
   background-image: url("../images/section_1_1.png");
   background-size: cover;
@@ -270,7 +270,7 @@ body {
 
 .section_1 .poa_4 {
   position: fixed;
-  bottom: 165px;
+  bottom: 40px;
   right: 40px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -623,6 +623,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
+}
+
+.section_4 .quiz-step-3.yellow {
+  background-color: #fee26e;
 }
 
 .section_4 .quiz-step-3 .title {
@@ -1874,7 +1878,7 @@ body {
   margin-top: 4px;
   color: #1363df;
   font-family: "YdestreetB", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 130%;
 }
@@ -1909,6 +1913,10 @@ body {
   font-size: 22px;
   font-weight: 700;
   line-height: 150%;
+}
+
+.section_10 .content .button span {
+  margin-top: 3px;
 }
 
 .section_10 .content .button.white {
