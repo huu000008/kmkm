@@ -1366,7 +1366,7 @@ body {
         text-align: center;
         font-family: Pretendard;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 120%;
       }
       .date {
@@ -1385,7 +1385,7 @@ body {
         margin-top: 24px;
         .item {
           display: flex;
-          gap: 22px;
+          gap: 30px;
           .icon {
             display: flex;
             align-items: center;
@@ -1405,7 +1405,8 @@ body {
             &-2 {
               display: flex;
               align-items: center;
-              margin-top: 4px;
+              gap: 2px;
+              margin-top: 7px;
               color: #1363df;
               font-family: "YdestreetB", sans-serif;
               font-size: 20px;
@@ -1413,7 +1414,7 @@ body {
               line-height: 130%;
 
               span {
-                margin-top: 3px;
+                margin-top: 6px;
                 font-family: "YdestreetB", sans-serif;
                 font-size: 11px;
                 font-weight: 700;
