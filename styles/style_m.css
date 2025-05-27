@@ -1547,6 +1547,7 @@ body {
   flex-direction: column;
   gap: 10px;
   margin-top: 12px;
+  text-align: left;
 }
 .section_10 .content .left .list .item {
   display: flex;
@@ -1580,7 +1581,6 @@ body {
 }
 .section_10 .content .left .list .item .text-1 {
   color: #000;
-  text-align: center;
   font-family: Pretendard Variable;
   font-size: 10px;
   font-weight: 700;
@@ -1591,7 +1591,6 @@ body {
   align-items: center;
   margin-top: 4px;
   color: #1363df;
-  text-align: center;
   font-family: "YdestreetB";
   font-size: 13px;
   font-weight: 700;
